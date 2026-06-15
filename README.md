@@ -96,8 +96,8 @@ This project is being extended with a **Java Spring Boot REST API** backend:
 
 ## 👤 Author
 
-Built by **[Your Name]** — Java Full Stack Developer  
-📧 your@email.com · [LinkedIn](https://linkedin.com/in/yourprofile) · [GitHub](https://github.com/yourusername)
+Built by **Nitin Rajgor** — Java Full Stack Developer
+📧 rajgornitin2308@gmail.com · [LinkedIn](tumhara-linkedin-link) · [GitHub](https://github.com/Nitinrajgor07)
 
 ---
 
