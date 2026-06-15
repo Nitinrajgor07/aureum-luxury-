@@ -1,0 +1,6 @@
+{
+  "name": "Aureum Luxury",
+  "description": "A responsive black and gold theme luxury men's fashion website, featuring premium collections, product showrooms, interactive shopping options, and clean animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

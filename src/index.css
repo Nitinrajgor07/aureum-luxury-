@@ -1,0 +1,80 @@
+/* ============================================
+   ALL @import statements MUST be at the top
+   ============================================ */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Montserrat", "Inter", sans-serif;
+  --font-serif: "Cormorant Garamond", "Cinzel", serif;
+  --font-display: "Cinzel", serif;
+  
+  --color-gold-50: #fbf8f1;
+  --color-gold-100: #f4ebd0;
+  --color-gold-200: #ebd39f;
+  --color-gold-300: #e0b668;
+  --color-gold-400: #d69a3b;
+  --color-gold-500: #ca811e;
+  --color-gold-600: #b06815;
+  --color-gold-700: #914e13;
+  --color-gold-800: #743c12;
+  --color-gold-900: #5d3111;
+  
+  --color-obsidian-50: #f5f5f5;
+  --color-obsidian-100: #e9e9e9;
+  --color-obsidian-200: #d4d4d4;
+  --color-obsidian-300: #acacac;
+  --color-obsidian-400: #7e7e7e;
+  --color-obsidian-500: #5f5f5f;
+  --color-obsidian-600: #424242;
+  --color-obsidian-750: #222222;
+  --color-obsidian-800: #1c1c1c;
+  --color-obsidian-850: #161616;
+  --color-obsidian-900: #121212;
+  --color-obsidian-950: #0a0a0a;
+  
+  --animate-subtle-bounce: subtle-bounce 3s infinite ease-in-out;
+  --animate-shimmer: shimmer 2.5s infinite linear;
+}
+
+@keyframes subtle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ca811e;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e0b668;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
