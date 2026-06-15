@@ -88,7 +88,8 @@ This project is being extended with a **Java Spring Boot REST API** backend:
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots<img width="1847" height="868" alt="image" src="https://github.com/user-attachments/assets/d869d921-9075-4db3-9b1e-0a6a97d86c41" />
+
 
 > *(Add screenshots here after deploying — paste image links)*
 
