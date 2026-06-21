@@ -1,105 +1,114 @@
-# ✦ Aureum Luxury — Full Stack E-Commerce Platform
+# 💎 Aureum Luxury — Full-Stack E-Commerce Platform
 
-A premium luxury e-commerce frontend built with **React + TypeScript + Tailwind CSS v4**, featuring a full shopping experience with cart management, product filtering, fragrance quiz, concierge booking, and VIP club access.
-
-🔗 **[Live Demo →](https://aureum-luxury.vercel.app)** *(update with your link after deploy)*
+A full-stack luxury e-commerce web application with a modern React frontend and a secure Spring Boot backend — built for scalable product browsing, order management, and authenticated user flows.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-- **Product Gallery** — Filter by category (Suits, Watches, Leather, Accessories) with smooth transitions
-- **Shopping Cart** — Slide-out drawer with quantity management, SKU-level tracking, and order summary
-- **Fragrance Quiz** — Interactive 3-step style profile quiz with personalized recommendations
-- **Concierge Booking** — Atelier appointment booking form with location selection
-- **VIP Club Portal** — Exclusive membership modal with benefit showcase
-- **Testimonials** — Client reviews section with ratings
-- **Fully Responsive** — Mobile-first design optimized across all screen sizes
+- **JWT Authentication** — Secure login/signup with token-based auth
+- **Order Management APIs** — Place, track, and manage orders end-to-end
+- **Advanced Search & Filter** — Fast product search/filtering using Java Streams
+- **Product Catalog** — Browse luxury product collections with detail views
+- **Responsive UI** — Built with Tailwind CSS for a clean, modern shopping experience
+- **One-Click Launcher** — `start-all.bat` script to run frontend + backend together
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
-| Frontend Framework | React 19 + TypeScript |
-| Styling | Tailwind CSS v4 |
-| Build Tool | Vite 6 |
-| Animations | Motion (Framer Motion) |
-| Icons | Lucide React |
-| Deployment | Vercel |
+|---|---|
+| Frontend | React 19, TypeScript, Vite, Tailwind CSS |
+| Backend | Spring Boot (Java) |
+| Auth | JWT (JSON Web Tokens) |
+| Database | MySQL |
+| Search/Filter Logic | Java Streams API |
 
 ---
 
-## 🚀 Getting Started
+## 📸 Screenshots
 
+> _Add screenshots of the homepage, product listing, product detail page, and checkout flow here._
+
+---
+
+## ⚙️ Installation & Setup
+
+### Backend (Spring Boot)
 ```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/aureum-luxury.git
-cd aureum-luxury
+cd backend
+# Configure MySQL credentials in application.properties
+mvn clean install
+mvn spring-boot:run
+```
 
-# Install dependencies
+### Frontend (React + Vite)
+```bash
+cd frontend
 npm install
-
-# Start development server
 npm run dev
-# → http://localhost:3000
+```
 
-# Build for production
-npm run build
+### Quick Start (Windows)
+```bash
+# Runs both frontend and backend together
+start-all.bat
 ```
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
-src/
-├── components/
-│   ├── Header.tsx          # Navigation + cart icon + VIP button
-│   ├── Hero.tsx            # Full-screen hero with CTA
-│   ├── Collections.tsx     # Category showcase cards
-│   ├── Gallery.tsx         # Product grid with filtering
-│   ├── CartDrawer.tsx      # Slide-out shopping cart
-│   ├── FragranceQuiz.tsx   # Interactive style quiz
-│   ├── ConciergeBooking.tsx # Appointment booking form
-│   ├── Testimonials.tsx    # Customer reviews
-│   ├── VIPClub.tsx         # VIP membership modal
-│   └── PremiumFooter.tsx   # Footer with atelier locations
-├── data.ts                 # Product & content data
-├── types.ts                # TypeScript interfaces
-├── App.tsx                 # Root component + state management
-└── main.tsx                # Entry point
+aureum-luxury/
+├── backend/
+│   ├── src/main/java/com/aureum/
+│   │   ├── controller/        # REST API controllers
+│   │   ├── service/           # Business logic
+│   │   ├── repository/        # JPA repositories
+│   │   ├── model/             # Entity classes
+│   │   └── security/          # JWT auth & config
+│   └── pom.xml
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── api/                # Axios/fetch calls to backend
+│   └── package.json
+├── start-all.bat
+└── README.md
 ```
 
 ---
 
-## 🔜 Upcoming — Backend Integration (Spring Boot)
+## 🧠 How It Works
 
-This project is being extended with a **Java Spring Boot REST API** backend:
-
-- `GET /api/products` — Serve products from MySQL database
-- `POST /api/cart` — Persist cart sessions
-- `POST /api/orders` — Order placement + confirmation
-- `POST /api/auth/login` — JWT-based authentication
-- `POST /api/bookings` — Concierge appointment scheduling
-
-**Backend Stack:** Java 17 · Spring Boot 3 · Spring Security · JDBC/JPA · MySQL · REST API · JWT
+1. User registers/logs in — backend issues a JWT on successful authentication.
+2. Frontend stores the token and attaches it to subsequent API requests.
+3. Product listings support advanced filtering (price, category, etc.) handled efficiently via Java Streams on the backend.
+4. Orders are created through dedicated REST endpoints, with status tracking persisted in MySQL.
+5. React frontend consumes these APIs to render a smooth, single-page shopping experience.
 
 ---
 
-## 📸 Screenshots<img width="1847" height="868" alt="image" src="https://github.com/user-attachments/assets/d869d921-9075-4db3-9b1e-0a6a97d86c41" />
+## 🔮 Future Improvements
 
-
-> *(Add screenshots here after deploying — paste image links)*
+- Payment gateway integration (Razorpay/Stripe)
+- Admin dashboard for inventory management
+- Wishlist and cart persistence
+- Dockerized deployment setup
 
 ---
 
 ## 👤 Author
 
-Built by **Nitin Rajgor** — Java Full Stack Developer
-📧 rajgornitin2308@gmail.com · [LinkedIn](tumhara-linkedin-link) · [GitHub](https://github.com/Nitinrajgor07)
+**Nitin Rajgor**
+M.Sc. CS & IT, Jain University, Bengaluru
+📧 rajgornitin2308@gmail.com
 
 ---
 
-*This project was built as a portfolio demonstration of React/TypeScript frontend skills, with a Spring Boot backend integration in progress.*
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
